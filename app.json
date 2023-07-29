@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Crypto Chat",
+    "slug": "crypto-chat",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/images/Coin.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./app/assets/images/Coin.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.crypto-chat.app",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.crypto-chat.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/images/Coin.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./app/assets/images/Coin.png",
+      "name": "Crypto Chat"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "66202eaa-67d2-408a-bd21-075d8e2ff10a"
+      }
+    }
+  }
+}
