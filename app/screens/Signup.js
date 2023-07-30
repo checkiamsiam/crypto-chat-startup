@@ -1,4 +1,4 @@
-import CheckBox from "@react-native-community/checkbox";
+import { CheckBox } from "@rneui/themed";
 import { AppBar } from "@react-native-material/core";
 import { useNavigation } from "@react-navigation/native";
 import React, { useState } from "react";
@@ -93,29 +93,29 @@ export default function Signup() {
                 </TouchableOpacity>
               </View>
 
-              <View
+              <TouchableOpacity
                 style={{
                   flexDirection: "row",
                   marginTop: 10,
                   alignItems: "center",
                   marginLeft: 5,
                 }}
+                onPress={() => setIsSelected(!isSelected)}
               >
                 <CheckBox
-                  value={isSelected}
+                  checked={isSelected}
                   onValueChange={() => setIsSelected(!isSelected)}
-                  tintColors={{ true: Colors.primary, false: Colors.txtcolor }}
                 />
                 <Text style={[style.subtxt, { marginLeft: 2 }]}>
                   I agree to the Terms of Service and Privacy Policy
                 </Text>
-              </View>
+              </TouchableOpacity>
             </View>
 
             <View style={{ marginTop: 40 }}>
               <View>
                 <TouchableOpacity
-                  onPress={() => navigation.navigate("Secured")}
+                  onPress={() => navigation.navigate("BottomNavigator")}
                   style={style.btn}
                 >
                   <Text style={style.btntxt}>Sign Up</Text>

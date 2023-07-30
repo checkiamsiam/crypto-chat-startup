@@ -1,8 +1,6 @@
 import React from "react";
 import { Image, Text, View } from "react-native";
 
-import { IMAGES } from "../../constants/theme";
-
 const MaintenanceHome = ({ icon, title }) => {
   return (
     <View
@@ -17,7 +15,7 @@ const MaintenanceHome = ({ icon, title }) => {
             height: 100,
             resizeMode: "contain",
           }}
-          source={IMAGES.logo}
+          source={require("../assets/image/Coin.png")}
         />
         <Text
           style={{

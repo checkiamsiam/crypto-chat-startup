@@ -26,14 +26,14 @@ const NetworkConnectivity = ({ children }) => {
       setIsOnline(false);
     }
   };
-  const checkServerConnectivity = async () => {
-    try {
-      const response = await fetch(API_BASE, { method: "HEAD" });
-      setIsServerOk(response.ok);
-    } catch (error) {
-      setIsServerOk(false);
-    }
-  };
+  // const checkServerConnectivity = async () => {
+  //   try {
+  //     const response = await fetch(API_BASE, { method: "HEAD" });
+  //     setIsServerOk(response.ok);
+  //   } catch (error) {
+  //     setIsServerOk(false);
+  //   }
+  // };
 
   useEffect(() => {
     const unsubscribe = NetInfo.addEventListener((state) => {
@@ -49,9 +49,9 @@ const NetworkConnectivity = ({ children }) => {
     };
   }, [isOnline]);
 
-  useEffect(() => {
-    checkServerConnectivity();
-  }, []);
+  // useEffect(() => {
+  //   checkServerConnectivity();
+  // }, []);
 
   if (!isOnline) {
     return (

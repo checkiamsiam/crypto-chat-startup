@@ -36,7 +36,7 @@ export default function StackNavigator() {
   useEffect(() => {
     setTimeout(() => {
       setshowSplashScreen(false);
-    }, 4000);
+    }, 2000);
   }, []);
 
   return (

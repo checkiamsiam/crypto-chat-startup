@@ -4,10 +4,10 @@
     "slug": "crypto-chat",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app/assets/images/Coin.png",
+    "icon": "./app/assets/image/Coin.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./app/assets/images/Coin.png",
+      "image": "./app/assets/image/Coin.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -21,12 +21,12 @@
       "package": "com.crypto-chat.app",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./app/assets/images/Coin.png",
+        "foregroundImage": "./app/assets/image/Coin.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./app/assets/images/Coin.png",
+      "favicon": "./app/assets/image/Coin.png",
       "name": "Crypto Chat"
     },
     "extra": {
