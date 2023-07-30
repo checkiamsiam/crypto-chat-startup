@@ -76,7 +76,7 @@ export default function Code() {
                   fontSize: 22,
                   borderWidth: 1,
                   color: Colors.primary,
-                  fontFamily: "Tinos-Regular",
+                  fontFamily: "Poppins-Regular",
                 }}
               />
             </View>

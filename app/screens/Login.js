@@ -54,7 +54,7 @@ export default function Login() {
                       paddingHorizontal: 10,
                       color: Colors.active,
                       flex: 1,
-                      fontFamily: "Tinos-Regular",
+                      fontFamily: "Poppins-Regular",
                     },
                   ]}
                 />
@@ -74,7 +74,7 @@ export default function Login() {
                   <Text
                     style={{
                       color: Colors.primary,
-                      fontFamily: "Tinos-Regular",
+                      fontFamily: "Poppins-Regular",
                       textDecorationLine: "underline",
                     }}
                   >
@@ -108,7 +108,7 @@ export default function Login() {
                 <Text
                   style={[
                     style.txt,
-                    { color: Colors.primary, fontFamily: "Tinos-Bold" },
+                    { color: Colors.primary, fontFamily: "Poppins-Bold" },
                   ]}
                 >
                   {" "}

@@ -61,7 +61,7 @@ export default function Profile() {
                 size={40}
               />
               <View style={{ marginHorizontal: 10 }}>
-                <Text style={[style.btntxt, { fontFamily: "Tinos-Bold" }]}>
+                <Text style={[style.btntxt, { fontFamily: "Poppins-Bold" }]}>
                   Invite Friends
                 </Text>
                 <Text style={[style.btntxt]}>
@@ -92,7 +92,7 @@ export default function Profile() {
                 size={40}
               />
               <View style={{ marginHorizontal: 10 }}>
-                <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+                <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                   Account
                 </Text>
               </View>
@@ -120,7 +120,7 @@ export default function Profile() {
                 size={40}
               />
               <View style={{ marginHorizontal: 10 }}>
-                <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+                <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                   Portfolio
                 </Text>
               </View>
@@ -154,7 +154,7 @@ export default function Profile() {
                 size={40}
               />
               <View style={{ marginHorizontal: 10 }}>
-                <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+                <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                   Billing/Payment
                 </Text>
               </View>
@@ -182,7 +182,7 @@ export default function Profile() {
                 size={40}
               />
               <View style={{ marginHorizontal: 10 }}>
-                <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+                <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                   Settings
                 </Text>
               </View>
@@ -209,7 +209,7 @@ export default function Profile() {
                 size={40}
               />
               <View style={{ marginHorizontal: 10 }}>
-                <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+                <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                   FAQ
                 </Text>
               </View>
@@ -235,7 +235,7 @@ export default function Profile() {
               <Text
                 style={[
                   style.btntxt,
-                  { fontFamily: "Tinos-Bold", marginHorizontal: 10 },
+                  { fontFamily: "Poppins-Bold", marginHorizontal: 10 },
                 ]}
               >
                 Sign Out

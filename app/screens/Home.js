@@ -408,7 +408,7 @@ export default function Home() {
                 alignItems: "flex-end",
               }}
             >
-              <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+              <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                 $16,351.57
               </Text>
               <View style={{ flexDirection: "row", alignItems: "center" }}>
@@ -443,7 +443,7 @@ export default function Home() {
                 alignItems: "flex-end",
               }}
             >
-              <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+              <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                 $14,563.34
               </Text>
               <View style={{ flexDirection: "row", alignItems: "center" }}>
@@ -477,7 +477,7 @@ export default function Home() {
                 alignItems: "flex-end",
               }}
             >
-              <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+              <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                 $14,563.34
               </Text>
               <View style={{ flexDirection: "row", alignItems: "center" }}>
@@ -512,7 +512,7 @@ export default function Home() {
                 alignItems: "flex-end",
               }}
             >
-              <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+              <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                 $14,563.34
               </Text>
               <View style={{ flexDirection: "row", alignItems: "center" }}>

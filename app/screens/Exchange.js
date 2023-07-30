@@ -66,7 +66,7 @@ export default function Exchange() {
                     <Text
                       style={[
                         style.txt1,
-                        { fontSize: 20, fontFamily: "Tinos-Bold" },
+                        { fontSize: 20, fontFamily: "Poppins-Bold" },
                       ]}
                     >
                       Bitcoin
@@ -158,7 +158,7 @@ export default function Exchange() {
                     <Text
                       style={[
                         style.txt1,
-                        { fontSize: 20, fontFamily: "Tinos-Bold" },
+                        { fontSize: 20, fontFamily: "Poppins-Bold" },
                       ]}
                     >
                       Ethereum

@@ -15,42 +15,42 @@ export default StyleSheet.create({
   title: {
     fontSize: 28,
     color: Colors.active,
-    fontFamily: "Tinos-Bold",
+    fontFamily: "Poppins-Bold",
   },
   title1: {
     fontSize: 30,
-    fontFamily: "Tinos-Bold",
+    fontFamily: "Poppins-Bold",
   },
   subtitle: {
     fontSize: 18,
     color: Colors.active,
-    fontFamily: "Tinos-Bold",
+    fontFamily: "Poppins-Bold",
   },
   subtitle1: {
     fontSize: 18,
     color: Colors.active,
-    fontFamily: "Tinos-Regular",
+    fontFamily: "Poppins-Regular",
   },
   txt: {
     fontSize: 16,
     color: Colors.disable,
-    fontFamily: "Tinos-Regular",
+    fontFamily: "Poppins-Regular",
   },
   txt1: {
     fontSize: 16,
     color: Colors.active,
-    fontFamily: "Tinos-Regular",
+    fontFamily: "Poppins-Regular",
   },
   btntxt: {
     fontSize: 16,
     color: Colors.secondary,
-    fontFamily: "Tinos-Regular",
+    fontFamily: "Poppins-Regular",
   },
   subtxt: {
     fontSize: 14,
     color: Colors.disable,
     lineHeight: 20,
-    fontFamily: "Tinos-Regular",
+    fontFamily: "Poppins-Regular",
   },
   btn: {
     backgroundColor: Colors.primary,
@@ -69,7 +69,7 @@ export default StyleSheet.create({
   logintitle: {
     fontSize: 26,
     textAlign: "center",
-    fontFamily: "Tinos-Bold",
+    fontFamily: "Poppins-Bold",
     color: Colors.active,
   },
 
@@ -81,7 +81,7 @@ export default StyleSheet.create({
     borderColor: Colors.primary,
     color: Colors.active,
     height: 55,
-    fontFamily: "Tinos-Regular",
+    fontFamily: "Poppins-Regular",
   },
 
   divider: {

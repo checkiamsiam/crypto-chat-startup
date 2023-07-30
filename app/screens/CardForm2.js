@@ -78,7 +78,7 @@ export default function CardForm2() {
                   alignItems: "flex-end",
                 }}
               >
-                <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+                <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                   $10000.0
                 </Text>
                 <Text style={[style.subtxt, { color: "#41BA63" }]}>3.54%</Text>
@@ -139,7 +139,7 @@ export default function CardForm2() {
                     paddingHorizontal: 10,
                     color: Colors.active,
                     flex: 1,
-                    fontFamily: "Tinos-Regular",
+                    fontFamily: "Poppins-Regular",
                   },
                 ]}
               />

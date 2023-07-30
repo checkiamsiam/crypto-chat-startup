@@ -64,7 +64,7 @@ export default function BuyBitcoin() {
                     <Text
                       style={[
                         style.txt1,
-                        { fontSize: 20, fontFamily: "Tinos-Bold" },
+                        { fontSize: 20, fontFamily: "Poppins-Bold" },
                       ]}
                     >
                       US Dollar
@@ -143,7 +143,7 @@ export default function BuyBitcoin() {
                     <Text
                       style={[
                         style.txt1,
-                        { fontSize: 20, fontFamily: "Tinos-Bold" },
+                        { fontSize: 20, fontFamily: "Poppins-Bold" },
                       ]}
                     >
                       Bitcoin
@@ -171,7 +171,7 @@ export default function BuyBitcoin() {
               alignItems: "center",
             }}
           >
-            <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+            <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
               A/C Balance: $58,351
             </Text>
             <TouchableOpacity

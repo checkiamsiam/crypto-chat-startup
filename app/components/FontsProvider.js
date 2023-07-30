@@ -2,8 +2,8 @@ import { useFonts } from "expo-font";
 
 const FontProvider = ({ children }) => {
   const [fontsLoaded] = useFonts({
-    "Tinos-Bold": require("../assets/fonts/Tinos-Bold.ttf"),
-    "Tinos-Regular": require("../assets/fonts/Tinos-Regular.ttf"),
+    "Poppins-Bold": require("../assets/fonts/Poppins-SemiBold.ttf"),
+    "Poppins-Regular": require("../assets/fonts/Poppins-Regular.ttf"),
   });
 
   if (!fontsLoaded) {

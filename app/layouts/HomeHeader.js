@@ -33,7 +33,7 @@ const HomeHeader = () => {
             style={{
               fontSize: 18,
               fontWeight: "600",
-              fontFamily: "Tinos-Regular",
+              fontFamily: "Poppins-Regular",
               color: Colors.active,
             }}
           >

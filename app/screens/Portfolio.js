@@ -52,7 +52,7 @@ export default function Portfolio() {
               paddingHorizontal: 10,
               color: Colors.active,
               flex: 1,
-              fontFamily: "Tinos-Regular",
+              fontFamily: "Poppins-Regular",
             }}
           >
             All
@@ -100,7 +100,7 @@ export default function Portfolio() {
                 alignItems: "flex-end",
               }}
             >
-              <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+              <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                 $100.0
               </Text>
               <Text style={style.subtxt}>0,0018 TAC</Text>
@@ -143,7 +143,7 @@ export default function Portfolio() {
                 alignItems: "flex-end",
               }}
             >
-              <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+              <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                 $14,563.34
               </Text>
               <Text style={style.subtxt}>0,0018 TAC</Text>
@@ -186,7 +186,7 @@ export default function Portfolio() {
                 alignItems: "flex-end",
               }}
             >
-              <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+              <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                 $36,263.13
               </Text>
               <Text style={style.subtxt}>0,0018 TAC</Text>
@@ -229,7 +229,7 @@ export default function Portfolio() {
                 alignItems: "flex-end",
               }}
             >
-              <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+              <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                 $14,563.34
               </Text>
               <Text style={style.subtxt}>0,0018 TAC</Text>
@@ -272,7 +272,7 @@ export default function Portfolio() {
                 alignItems: "flex-end",
               }}
             >
-              <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+              <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                 $13,221.67
               </Text>
               <View style={{ flexDirection: "row", alignItems: "center" }}>

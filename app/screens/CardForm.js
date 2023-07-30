@@ -1,22 +1,21 @@
+import { AppBar } from "@react-native-material/core";
+import { useNavigation } from "@react-navigation/native";
+import React from "react";
 import {
-  View,
-  Text,
-  TouchableOpacity,
   Dimensions,
-  ScrollView,
-  SafeAreaView,
-  Image,
-  TextInput,
   KeyboardAvoidingView,
   Platform,
+  SafeAreaView,
+  ScrollView,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from "react-native";
-import React, { useState } from "react";
-import style from "../theme/style";
-import { Colors } from "../theme/color";
-import { useNavigation } from "@react-navigation/native";
 import { Avatar } from "react-native-paper";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import { AppBar } from "@react-native-material/core";
+import { Colors } from "../theme/color";
+import style from "../theme/style";
 
 const width = Dimensions.get("screen").width;
 const height = Dimensions.get("screen").height;
@@ -116,7 +115,7 @@ export default function CardForm() {
                   ]}
                 />
                 <View style={{ flex: 1, alignItems: "flex-end" }}>
-                  <Text style={[style.txt, { fontFamily: "Tinos-Bold" }]}>
+                  <Text style={[style.txt, { fontFamily: "Poppins-Bold" }]}>
                     VISA
                   </Text>
                 </View>
@@ -202,7 +201,7 @@ export default function CardForm() {
             <View style={{ paddingTop: 50 }}>
               <Text style={[style.txt]}>
                 By adding a new card, you agree to the
-                <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+                <Text style={[style.txt1, { fontFamily: "Poppins-Bold" }]}>
                   {" "}
                   Credit/Debit Card Terms.
                 </Text>

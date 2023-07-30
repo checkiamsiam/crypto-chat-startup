@@ -106,7 +106,7 @@ export default function Pricealert() {
                 <Text
                   style={[
                     style.subtxt,
-                    { fontFamily: "Tinos-Bold", color: Colors.secondary },
+                    { fontFamily: "Poppins-Bold", color: Colors.secondary },
                   ]}
                 >
                   Add New
@@ -254,7 +254,7 @@ export default function Pricealert() {
                 <Text
                   style={[
                     style.subtxt,
-                    { fontFamily: "Tinos-Bold", color: Colors.secondary },
+                    { fontFamily: "Poppins-Bold", color: Colors.secondary },
                   ]}
                 >
                   Add New

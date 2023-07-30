@@ -61,7 +61,7 @@ export default function Signup() {
                       paddingHorizontal: 10,
                       color: Colors.active,
                       flex: 1,
-                      fontFamily: "Tinos-Regular",
+                      fontFamily: "Poppins-Regular",
                     },
                   ]}
                 />
@@ -116,7 +116,7 @@ export default function Signup() {
                 <Text
                   style={[
                     style.txt,
-                    { color: Colors.primary, fontFamily: "Tinos-Bold" },
+                    { color: Colors.primary, fontFamily: "Poppins-Bold" },
                   ]}
                 >
                   Sign In
