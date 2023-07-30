@@ -27,6 +27,7 @@ import Signup from "../screens/Signup";
 import Splash from "../screens/Splash";
 import Step2 from "../screens/Step2";
 import Success from "../screens/Success";
+import Portfolio from "../screens/Portfolio";
 
 const Stack = createNativeStackNavigator();
 
@@ -65,16 +66,6 @@ export default function StackNavigator() {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="Code"
-          component={Code}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="Exchange"
-          component={Exchange}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
           name="Login"
           component={Login}
           options={{ headerShown: false }}
@@ -85,8 +76,23 @@ export default function StackNavigator() {
           options={{ headerShown: false }}
         />
         <Stack.Screen
+          name="Code"
+          component={Code}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Exchange"
+          component={Exchange}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
           name="Success"
           component={Success}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Portfolio"
+          component={Portfolio}
           options={{ headerShown: false }}
         />
         <Stack.Screen

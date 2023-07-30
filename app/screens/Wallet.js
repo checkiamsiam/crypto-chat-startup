@@ -12,6 +12,7 @@ import {
 } from "react-native";
 import { Avatar } from "react-native-paper";
 import Icon from "react-native-vector-icons/Ionicons";
+import HomeHeader from "../layouts/HomeHeader";
 import { Colors } from "../theme/color";
 import style from "../theme/style";
 
@@ -24,53 +25,13 @@ export default function Wallet() {
   return (
     <SafeAreaView style={style.area}>
       <View style={style.main}>
-        <View
-          style={{
-            marginTop: 20,
-            flexDirection: "row",
-            alignItems: "center",
-            paddingHorizontal: 15,
-            paddingVertical: 10,
-            borderRadius: 10,
-          }}
-        >
-          <Image
-            source={require("../assets/image/image.png")}
-            resizeMode="stretch"
-            style={{ width: width / 9, height: height / 20 }}
-          />
-          <View style={{ marginHorizontal: 10 }}>
-            <Text
-              style={{
-                fontSize: 18,
-                fontWeight: "600",
-                fontFamily: "Tinos-Regular",
-                color: Colors.active,
-              }}
-            >
-              Smith Rollins
-            </Text>
-          </View>
-          <View
-            style={{
-              justifyContent: "center",
-              flex: 1,
-              alignItems: "flex-end",
-            }}
-          >
-            <Image
-              source={require("../assets/image/Notifications.png")}
-              resizeMode="stretch"
-              style={{ width: width / 9.5, height: height / 20.5 }}
-            />
-          </View>
-        </View>
+        <HomeHeader />
 
         <ScrollView
           showsVerticalScrollIndicator={false}
           nestedScrollEnabled={true}
         >
-          <View style={{ marginTop: 20, marginBottom: -50 }}>
+          <View style={{ marginTop: 10 }}>
             <View>
               <ImageBackground
                 source={require("../assets/image/Card2.png")}

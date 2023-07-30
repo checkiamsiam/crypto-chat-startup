@@ -3,7 +3,7 @@ import React from "react";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import Home from "../screens/Home";
 // import Profile from '../screens/Profile';
-import Portfolio from "../screens/Portfolio";
+import ChatScreen from "../screens/Chat";
 import Profile from "../screens/Profile";
 import Wallet from "../screens/Wallet";
 import { Colors } from "../theme/color";
@@ -34,7 +34,7 @@ export default function MyTabs() {
           tabBarIcon: ({ focused, color }) => {
             return (
               <Ionicons
-                name="home-outline"
+                name={focused ? "home" : "home-outline"}
                 size={25}
                 color={focused ? Colors.primary : Colors.disable}
               />
@@ -51,7 +51,7 @@ export default function MyTabs() {
           tabBarIcon: ({ focused, color }) => {
             return (
               <Ionicons
-                name="md-wallet-outline"
+                name={focused ? "md-wallet" : "md-wallet-outline"}
                 size={25}
                 color={focused ? Colors.primary : Colors.disable}
               />
@@ -62,13 +62,13 @@ export default function MyTabs() {
       />
 
       <Tab.Screen
-        name="Portfolio"
-        component={Portfolio}
+        name="Chat"
+        component={ChatScreen}
         options={{
           tabBarIcon: ({ focused, color }) => {
             return (
               <Ionicons
-                name="chatbubbles-outline"
+                name={focused ? "chatbubbles" : "chatbubbles-outline"}
                 size={25}
                 color={focused ? Colors.primary : Colors.disable}
               />
@@ -85,7 +85,7 @@ export default function MyTabs() {
           tabBarIcon: ({ focused, color }) => {
             return (
               <Ionicons
-                name="person-outline"
+                name={focused ? "person" : "person-outline"}
                 size={25}
                 color={focused ? Colors.primary : Colors.disable}
               />

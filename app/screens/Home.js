@@ -13,6 +13,7 @@ import {
 import RBSheet from "react-native-raw-bottom-sheet";
 import Icon from "react-native-vector-icons/Ionicons";
 import Icons from "react-native-vector-icons/MaterialCommunityIcons";
+import HomeHeader from "../layouts/HomeHeader";
 import { Colors } from "../theme/color";
 import style from "../theme/style";
 
@@ -25,52 +26,13 @@ export default function Home() {
   return (
     <SafeAreaView style={style.area}>
       <View style={style.main}>
-        <View
-          style={{
-            marginTop: 20,
-            flexDirection: "row",
-            alignItems: "center",
-            paddingHorizontal: 15,
-            borderRadius: 10,
-          }}
-        >
-          <Image
-            source={require("../assets/image/image.png")}
-            resizeMode="stretch"
-            style={{ width: width / 9, height: height / 20 }}
-          />
-          <View style={{ marginHorizontal: 10 }}>
-            <Text
-              style={{
-                fontSize: 18,
-                fontWeight: "600",
-                fontFamily: "Tinos-Regular",
-                color: Colors.active,
-              }}
-            >
-              Smith Rollins
-            </Text>
-          </View>
-          <View
-            style={{
-              justifyContent: "center",
-              flex: 1,
-              alignItems: "flex-end",
-            }}
-          >
-            <Image
-              source={require("../assets/image/Notifications.png")}
-              resizeMode="stretch"
-              style={{ width: width / 9.5, height: height / 20.5 }}
-            />
-          </View>
-        </View>
+        <HomeHeader />
 
         <ScrollView
           showsVerticalScrollIndicator={false}
           nestedScrollEnabled={true}
         >
-          <View style={{ marginTop: 20 }}>
+          <View style={{ marginTop: 10 }}>
             <ScrollView
               horizontal
               showsHorizontalScrollIndicator={false}
@@ -456,6 +418,74 @@ export default function Home() {
             </View>
           </View>
 
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              paddingHorizontal: 15,
+              paddingVertical: 10,
+              borderRadius: 10,
+            }}
+          >
+            <Image
+              source={require("../assets/image/Coin4.png")}
+              resizeMode="stretch"
+              style={{ width: width / 9, height: height / 20 }}
+            />
+            <View style={{ marginHorizontal: 10 }}>
+              <Text style={[style.subtitle]}>Ripple</Text>
+              <Text style={[style.subtxt]}>RIP</Text>
+            </View>
+            <View
+              style={{
+                justifyContent: "center",
+                flex: 1,
+                alignItems: "flex-end",
+              }}
+            >
+              <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+                $14,563.34
+              </Text>
+              <View style={{ flexDirection: "row", alignItems: "center" }}>
+                <Icon name="chevron-up-sharp" color={"#5FC88F"} size={20} />
+                <Text style={[style.subtxt, { lineHeight: 13 }]}>2.5%</Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              paddingHorizontal: 15,
+              paddingVertical: 10,
+              borderRadius: 10,
+            }}
+          >
+            <Image
+              source={require("../assets/image/Coin4.png")}
+              resizeMode="stretch"
+              style={{ width: width / 9, height: height / 20 }}
+            />
+            <View style={{ marginHorizontal: 10 }}>
+              <Text style={[style.subtitle]}>Ripple</Text>
+              <Text style={[style.subtxt]}>RIP</Text>
+            </View>
+            <View
+              style={{
+                justifyContent: "center",
+                flex: 1,
+                alignItems: "flex-end",
+              }}
+            >
+              <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+                $14,563.34
+              </Text>
+              <View style={{ flexDirection: "row", alignItems: "center" }}>
+                <Icon name="chevron-up-sharp" color={"#5FC88F"} size={20} />
+                <Text style={[style.subtxt, { lineHeight: 13 }]}>2.5%</Text>
+              </View>
+            </View>
+          </View>
           <View
             style={{
               flexDirection: "row",

@@ -1,4 +1,3 @@
-import { AppBar } from "@react-native-material/core";
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import {
@@ -10,8 +9,8 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { Avatar } from "react-native-paper";
 import Icon from "react-native-vector-icons/Ionicons";
+import ScreenHeader from "../layouts/ScreenHeader";
 import { Colors } from "../theme/color";
 import style from "../theme/style";
 
@@ -24,35 +23,7 @@ export default function Portfolio() {
   return (
     <SafeAreaView style={style.area}>
       <View style={style.main}>
-        <AppBar
-          color={Colors.bg}
-          title="Portfolio"
-          titleStyle={[style.subtitle]}
-          centerTitle={true}
-          elevation={0}
-          leading={
-            <TouchableOpacity
-            // onPress={()=>navigation.navigate('')}
-            >
-              <Avatar.Icon
-                icon="arrow-left"
-                style={{ backgroundColor: Colors.secondary }}
-                color={Colors.active}
-                size={40}
-              />
-            </TouchableOpacity>
-          }
-          trailing={
-            <TouchableOpacity>
-              <Avatar.Icon
-                icon="magnify"
-                style={{ backgroundColor: Colors.secondary }}
-                color={Colors.active}
-                size={40}
-              />
-            </TouchableOpacity>
-          }
-        />
+        <ScreenHeader backScreen="Profile" title="Portfolio" />
 
         <View
           style={{

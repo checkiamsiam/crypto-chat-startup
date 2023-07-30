@@ -44,7 +44,7 @@ export default function Introduction() {
           ))}
         </View>
         <View>
-          {currentSlideIndex == 0 ? (
+          {currentSlideIndex === 0 ? (
             <View style={{ paddingVertical: 20 }}>
               <TouchableOpacity
                 style={[

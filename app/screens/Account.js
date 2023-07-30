@@ -1,4 +1,3 @@
-import { AppBar } from "@react-native-material/core";
 import { useNavigation } from "@react-navigation/native";
 import React, { useState } from "react";
 import {
@@ -13,8 +12,9 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { Avatar } from "react-native-paper";
+import IconE from "react-native-vector-icons/Entypo";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import ScreenHeader from "../layouts/ScreenHeader";
 import { Colors } from "../theme/color";
 import style from "../theme/style";
 
@@ -31,23 +31,8 @@ export default function Account() {
         behavior={Platform.OS === "ios" ? "padding" : null}
       >
         <View style={[style.main]}>
-          <AppBar
-            title="Account"
-            titleStyle={{ color: Colors.active }}
-            centerTitle={true}
-            color={Colors.bg}
-            elevation={0}
-            leading={
-              <TouchableOpacity onPress={() => navigation.navigate("Profile")}>
-                <Avatar.Icon
-                  icon="arrow-left"
-                  style={{ backgroundColor: Colors.secondary }}
-                  color="black"
-                  size={40}
-                />
-              </TouchableOpacity>
-            }
-          />
+          <ScreenHeader backScreen="Profile" title="Account" />
+
           <ScrollView showsVerticalScrollIndicator={false}>
             <View style={{ paddingVertical: 10 }}>
               <Image
@@ -159,48 +144,7 @@ export default function Account() {
                 </View>
               </View>
             </View>
-            <View style={{ paddingTop: 10 }}>
-              <View
-                style={{
-                  // paddingVertical: 15,
-                  flexDirection: "row",
-                  backgroundColor: Colors.secondary,
-                  paddingHorizontal: 10,
-                  borderRadius: 15,
-                  alignItems: "center",
-                }}
-              >
-                <Icon name="lock-outline" color={Colors.disable} size={30} />
-                <View style={{ marginHorizontal: 10 }}>
-                  <Text style={[style.subtxt, { marginTop: 10 }]}>
-                    Password
-                  </Text>
-                  <TextInput
-                    placeholder="smithrollins05@yahoo.com"
-                    placeholderTextColor={Colors.active}
-                    selectionColor={Colors.primary}
-                    secureTextEntry={isPasswordVisible}
-                    style={{
-                      color: Colors.active,
-                      marginTop: -15,
-                      width: width / 1.6,
-                      height: 50,
-                    }}
-                  />
-                </View>
 
-                <TouchableOpacity
-                  style={{ flex: 1, alignItems: "flex-end" }}
-                  onPress={() => setIsPasswordVisible(!isPasswordVisible)}
-                >
-                  <Icon
-                    name={isPasswordVisible ? "eye-off" : "eye"}
-                    color={Colors.disable}
-                    size={20}
-                  />
-                </TouchableOpacity>
-              </View>
-            </View>
             <View style={{ paddingTop: 10 }}>
               <View
                 style={{
@@ -219,6 +163,35 @@ export default function Account() {
                   </Text>
                   <TextInput
                     placeholder="+880 1124588875"
+                    placeholderTextColor={Colors.active}
+                    selectionColor={Colors.primary}
+                    style={{
+                      color: Colors.active,
+                      marginTop: -15,
+                      height: 50,
+                    }}
+                  />
+                </View>
+              </View>
+            </View>
+            <View style={{ paddingTop: 10 }}>
+              <View
+                style={{
+                  // paddingVertical: 15,
+                  flexDirection: "row",
+                  backgroundColor: Colors.secondary,
+                  paddingHorizontal: 10,
+                  borderRadius: 15,
+                  alignItems: "center",
+                }}
+              >
+                <IconE name="location" color={Colors.disable} size={30} />
+                <View style={{ marginHorizontal: 10 }}>
+                  <Text style={[style.subtxt, { marginTop: 10 }]}>
+                    Loacation
+                  </Text>
+                  <TextInput
+                    placeholder="Dhaka , Bangladesh"
                     placeholderTextColor={Colors.active}
                     selectionColor={Colors.primary}
                     style={{

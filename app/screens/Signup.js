@@ -1,5 +1,4 @@
 import { useNavigation } from "@react-navigation/native";
-import { CheckBox } from "@rneui/themed";
 import React, { useState } from "react";
 import {
   KeyboardAvoidingView,
@@ -11,6 +10,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import { Checkbox } from "react-native-paper";
 import Icon from "react-native-vector-icons/Ionicons";
 import { Colors } from "../theme/color";
 import style from "../theme/style";
@@ -85,11 +85,7 @@ export default function Signup() {
                 }}
                 onPress={() => setIsSelected(!isSelected)}
               >
-                <CheckBox
-                  checked={isSelected}
-                  backgroundColor={Colors.bg}
-                  onValueChange={() => setIsSelected(!isSelected)}
-                />
+                <Checkbox status={isSelected ? "checked" : "unchecked"} />
                 <Text style={[style.subtxt, { marginLeft: 2 }]}>
                   I agree to the Terms of Service and Privacy Policy
                 </Text>

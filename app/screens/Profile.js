@@ -1,4 +1,3 @@
-import { AppBar } from "@react-native-material/core";
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import {
@@ -13,6 +12,7 @@ import {
 import { Avatar } from "react-native-paper";
 import Icons from "react-native-vector-icons/Ionicons";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import ScreenHeader from "../layouts/ScreenHeader";
 import { Colors } from "../theme/color";
 import style from "../theme/style";
 
@@ -24,25 +24,7 @@ export default function Profile() {
   return (
     <SafeAreaView style={[style.area]}>
       <View style={[style.main]}>
-        <AppBar
-          title="Profile"
-          titleStyle={{ color: Colors.active }}
-          centerTitle={true}
-          color={Colors.bg}
-          elevation={0}
-          leading={
-            <TouchableOpacity
-            // onPress={()=>navigation.navigate('Profile')}
-            >
-              <Avatar.Icon
-                icon="arrow-left"
-                style={{ backgroundColor: Colors.secondary }}
-                color="black"
-                size={40}
-              />
-            </TouchableOpacity>
-          }
-        />
+        <ScreenHeader backScreen="Home" title="Profile" />
         <ScrollView showsVerticalScrollIndicator={false}>
           <View style={{ paddingTop: 10 }}>
             <Image
@@ -129,6 +111,41 @@ export default function Profile() {
                 borderRadius: 15,
                 alignItems: "center",
               }}
+              onPress={() => navigation.navigate("Portfolio")}
+            >
+              <Avatar.Icon
+                icon="wallet"
+                style={{ backgroundColor: "#A3DAFE" }}
+                color={Colors.primary}
+                size={40}
+              />
+              <View style={{ marginHorizontal: 10 }}>
+                <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
+                  Portfolio
+                </Text>
+              </View>
+              <View
+                style={{
+                  flex: 1,
+                  alignItems: "center",
+                  flexDirection: "row",
+                  justifyContent: "flex-end",
+                }}
+              >
+                <Icon name="chevron-right" color="#9EA3AE" size={30} />
+              </View>
+            </TouchableOpacity>
+          </View>
+          <View style={{ paddingTop: 10 }}>
+            <TouchableOpacity
+              style={{
+                paddingVertical: 15,
+                flexDirection: "row",
+                backgroundColor: Colors.secondary,
+                paddingHorizontal: 10,
+                borderRadius: 15,
+                alignItems: "center",
+              }}
             >
               <Avatar.Icon
                 icon="credit-card"
@@ -146,41 +163,7 @@ export default function Profile() {
               </View>
             </TouchableOpacity>
           </View>
-          <View style={{ paddingTop: 10 }}>
-            <TouchableOpacity
-              style={{
-                paddingVertical: 15,
-                flexDirection: "row",
-                backgroundColor: Colors.secondary,
-                paddingHorizontal: 10,
-                borderRadius: 15,
-                alignItems: "center",
-              }}
-            >
-              <Avatar.Icon
-                icon="translate"
-                style={{ backgroundColor: "#A3DAFE" }}
-                color={Colors.primary}
-                size={40}
-              />
-              <View style={{ marginHorizontal: 10 }}>
-                <Text style={[style.txt1, { fontFamily: "Tinos-Bold" }]}>
-                  Language
-                </Text>
-              </View>
-              <View
-                style={{
-                  flex: 1,
-                  alignItems: "center",
-                  flexDirection: "row",
-                  justifyContent: "flex-end",
-                }}
-              >
-                <Text style={[style.txt]}>English</Text>
-                <Icon name="chevron-right" color="#9EA3AE" size={30} />
-              </View>
-            </TouchableOpacity>
-          </View>
+
           <View style={{ paddingTop: 10 }}>
             <TouchableOpacity
               style={{
