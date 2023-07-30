@@ -1,10 +1,11 @@
-import { StyleSheet } from "react-native";
+import { StatusBar, StyleSheet } from "react-native";
 import { Colors } from "./color";
 
 export default StyleSheet.create({
   area: {
     flex: 1,
     backgroundColor: Colors.bg,
+    paddingTop: StatusBar.currentHeight,
   },
   main: {
     flex: 1,

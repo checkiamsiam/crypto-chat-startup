@@ -13,9 +13,7 @@ import {
 import Icon from "react-native-vector-icons/Ionicons";
 import style from "../theme/style";
 // Ionicons.loadFont()
-import { AppBar } from "@react-native-material/core";
 // MaterialCommunity.loadFont()
-import { Avatar } from "react-native-paper";
 import { Colors } from "../theme/color";
 
 export default function Login() {
@@ -23,26 +21,12 @@ export default function Login() {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   return (
-    <SafeAreaView style={style.area}>
+    <SafeAreaView style={[style.area, { paddingTop: 100 }]}>
       <KeyboardAvoidingView
         style={{ flex: 1 }}
         behavior={Platform.OS === "ios" ? "padding" : null}
       >
         <View style={style.main}>
-          <AppBar
-            color={Colors.bg}
-            elevation={0}
-            leading={
-              <TouchableOpacity onPress={() => navigation.navigate("Signup")}>
-                <Avatar.Icon
-                  icon="arrow-left"
-                  style={{ backgroundColor: Colors.secondary }}
-                  color="black"
-                  size={40}
-                />
-              </TouchableOpacity>
-            }
-          />
           <ScrollView showsVerticalScrollIndicator={false}>
             <View style={{ marginTop: 40 }}>
               <Text style={style.title}>Let,s Sign In</Text>

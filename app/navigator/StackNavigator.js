@@ -119,10 +119,6 @@ export default function StackNavigator() {
           component={ReceiveCrypto}
           options={{ headerShown: false }}
         />
-        {/* <Stack.Screen
-                    name="Profile"
-                    component={Profile}
-                    options={{ headerShown: false }} /> */}
         <Stack.Screen
           name="Account"
           component={Account}
@@ -133,23 +129,11 @@ export default function StackNavigator() {
           component={Refer}
           options={{ headerShown: false }}
         />
-        {/* <Stack.Screen
-                    name="Home"
-                    component={Home}
-                    options={{ headerShown: false }} /> */}
-        {/* <Stack.Screen
-                    name="Wallet"
-                    component={Wallet}
-                    options={{ headerShown: false }} /> */}
         <Stack.Screen
           name="Coindetail"
           component={Coindetail}
           options={{ headerShown: false }}
         />
-        {/* <Stack.Screen
-                    name="Portfolio"
-                    component={Portfolio}
-                    options={{ headerShown: false }} /> */}
         <Stack.Screen
           name="Pricealert"
           component={Pricealert}

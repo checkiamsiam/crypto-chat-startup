@@ -1,9 +1,9 @@
-import { CheckBox } from "@rneui/themed";
-import { AppBar } from "@react-native-material/core";
 import { useNavigation } from "@react-navigation/native";
+import { CheckBox } from "@rneui/themed";
 import React, { useState } from "react";
 import {
   KeyboardAvoidingView,
+  Platform,
   SafeAreaView,
   ScrollView,
   Text,
@@ -11,11 +11,9 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { Avatar } from "react-native-paper";
 import Icon from "react-native-vector-icons/Ionicons";
 import { Colors } from "../theme/color";
 import style from "../theme/style";
-import { Platform } from "react-native";
 
 export default function Signup() {
   const navigation = useNavigation();
@@ -23,27 +21,12 @@ export default function Signup() {
   const [isSelected, setIsSelected] = useState(false);
 
   return (
-    <SafeAreaView style={style.area}>
+    <SafeAreaView style={[style.area, { paddingTop: 100 }]}>
       <KeyboardAvoidingView
         style={{ flex: 1 }}
         behavior={Platform.OS === "ios" ? "padding" : null}
       >
         <View style={style.main}>
-          <AppBar
-            color={Colors.bg}
-            elevation={0}
-            leading={
-              <TouchableOpacity onPress={() => navigation.navigate("Login")}>
-                <Avatar.Icon
-                  icon="arrow-left"
-                  style={{ backgroundColor: Colors.secondary }}
-                  color="black"
-                  size={40}
-                />
-              </TouchableOpacity>
-            }
-          />
-
           <ScrollView showsVerticalScrollIndicator={false}>
             <View style={{ marginTop: 40 }}>
               <Text style={style.title}>Sign Up</Text>
@@ -104,6 +87,7 @@ export default function Signup() {
               >
                 <CheckBox
                   checked={isSelected}
+                  backgroundColor={Colors.bg}
                   onValueChange={() => setIsSelected(!isSelected)}
                 />
                 <Text style={[style.subtxt, { marginLeft: 2 }]}>

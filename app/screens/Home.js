@@ -31,7 +31,6 @@ export default function Home() {
             flexDirection: "row",
             alignItems: "center",
             paddingHorizontal: 15,
-            paddingVertical: 10,
             borderRadius: 10,
           }}
         >
