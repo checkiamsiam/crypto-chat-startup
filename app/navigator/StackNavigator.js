@@ -19,6 +19,8 @@ import Markettrends from "../screens/Markettrends";
 import PayMethod from "../screens/PayMethod";
 import PayMethodOption from "../screens/PayMethodOption";
 import PaymentSuccess from "../screens/PaymentSuccess";
+import PersonalChat from "../screens/PersonalChat";
+import Portfolio from "../screens/Portfolio";
 import Pricealert from "../screens/Pricealert";
 import ReceiveCrypto from "../screens/ReceiveCrypto";
 import Refer from "../screens/Refer";
@@ -27,7 +29,6 @@ import Signup from "../screens/Signup";
 import Splash from "../screens/Splash";
 import Step2 from "../screens/Step2";
 import Success from "../screens/Success";
-import Portfolio from "../screens/Portfolio";
 
 const Stack = createNativeStackNavigator();
 
@@ -158,6 +159,11 @@ export default function StackNavigator() {
         <Stack.Screen
           name="BottomNavigator"
           component={BottomNavigator}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="PersonalChat"
+          component={PersonalChat}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
