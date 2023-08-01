@@ -1,5 +1,4 @@
 import { Entypo, Feather, Ionicons } from "@expo/vector-icons";
-import { useNavigation, useRoute } from "@react-navigation/native";
 import * as ImagePicker from "expo-image-picker";
 import React, { useEffect, useRef, useState } from "react";
 import {
@@ -50,11 +49,7 @@ const PersonalChat = () => {
       timeStamp: new Date(),
     },
   ]);
-  const [recepientData, setRecepientData] = useState();
-  const navigation = useNavigation();
   const [selectedImage, setSelectedImage] = useState(null);
-  const route = useRoute();
-  const { recepientId } = route.params;
   const [message, setMessage] = useState("");
 
   const scrollViewRef = useRef(null);
