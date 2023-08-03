@@ -7,6 +7,7 @@ import {
   Image,
   KeyboardAvoidingView,
   Platform,
+  Pressable,
   SafeAreaView,
   Text,
   TextInput,
@@ -238,11 +239,42 @@ export default function ContractScreeen() {
                 alignItems: "flex-end",
               }}
             >
-              <Image
-                source={require("../assets/image/Notifications.png")}
-                resizeMode="stretch"
-                style={{ width: width / 9.5, height: height / 20.5 }}
-              />
+              <Pressable
+                onPress={() => navigation.navigate("Notification")}
+                size={25}
+              >
+                <View>
+                  <Ionicons
+                    color={Colors.disable}
+                    size={25}
+                    name="notifications"
+                  />
+                  {1 > 0 && (
+                    <View
+                      style={{
+                        height: 14,
+                        width: 14,
+                        borderRadius: 14,
+                        backgroundColor: Colors.primary,
+                        alignItems: "center",
+                        justifyContent: "center",
+                        position: "absolute",
+                        top: -4,
+                        right: -6,
+                      }}
+                    >
+                      <Text
+                        style={{
+                          fontSize: 10,
+                          color: Colors.active,
+                        }}
+                      >
+                        {5}
+                      </Text>
+                    </View>
+                  )}
+                </View>
+              </Pressable>
             </View>
           </View>
           <View

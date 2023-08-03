@@ -24,7 +24,7 @@ export default function Profile() {
   return (
     <SafeAreaView style={[style.area]}>
       <View style={[style.main]}>
-        <ScreenHeader backScreen="Home" title="Profile" />
+        <ScreenHeader title="Profile" />
         <ScrollView showsVerticalScrollIndicator={false}>
           <View style={{ paddingTop: 10 }}>
             <Image

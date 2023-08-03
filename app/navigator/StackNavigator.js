@@ -16,6 +16,7 @@ import Exchange from "../screens/Exchange";
 import Introduction from "../screens/Introduction";
 import Login from "../screens/Login";
 import Markettrends from "../screens/Markettrends";
+import NotificationScreen from "../screens/Notification";
 import PayMethod from "../screens/PayMethod";
 import PayMethodOption from "../screens/PayMethodOption";
 import PaymentSuccess from "../screens/PaymentSuccess";
@@ -164,6 +165,11 @@ export default function StackNavigator() {
         <Stack.Screen
           name="PersonalChat"
           component={PersonalChat}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Notification"
+          component={NotificationScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

@@ -23,7 +23,7 @@ export default function Portfolio() {
   return (
     <SafeAreaView style={style.area}>
       <View style={style.main}>
-        <ScreenHeader backScreen="Profile" title="Portfolio" />
+        <ScreenHeader title="Portfolio" />
 
         <View
           style={{

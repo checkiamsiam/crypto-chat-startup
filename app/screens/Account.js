@@ -31,7 +31,7 @@ export default function Account() {
         behavior={Platform.OS === "ios" ? "padding" : null}
       >
         <View style={[style.main]}>
-          <ScreenHeader backScreen="Profile" title="Account" />
+          <ScreenHeader title="Account" />
 
           <ScrollView showsVerticalScrollIndicator={false}>
             <View style={{ paddingVertical: 10 }}>

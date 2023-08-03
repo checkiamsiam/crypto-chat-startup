@@ -6,7 +6,7 @@ import { Avatar } from "react-native-paper";
 import { Colors } from "../theme/color";
 import style from "../theme/style";
 
-const ScreenHeader = ({ backScreen, title }) => {
+const ScreenHeader = ({ title }) => {
   const navigation = useNavigation();
   return (
     <AppBar
@@ -16,7 +16,7 @@ const ScreenHeader = ({ backScreen, title }) => {
       centerTitle={true}
       elevation={0}
       leading={
-        <TouchableOpacity onPress={() => navigation.navigate(backScreen)}>
+        <TouchableOpacity onPress={() => navigation.goBack()}>
           <Avatar.Icon
             icon="arrow-left"
             style={{ backgroundColor: Colors.secondary }}

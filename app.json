@@ -11,14 +11,16 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.crypto-chat.app",
       "buildNumber": "1.0.0"
     },
     "android": {
-      "package": "com.crypto-chat.app",
+      "package": "com.checkiamsiam.cryptochat",
       "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/image/Coin.png",
